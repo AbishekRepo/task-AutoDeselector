@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.tile{
+    height: 100px;
+    width: 100px;
+    border: solid 1px #000;
+}
+
+.selected{
+    background : green;
+}
+

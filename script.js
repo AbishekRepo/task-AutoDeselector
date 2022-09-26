@@ -1,4 +1,4 @@
-let grid = 4
+let grid = 2
 
 clickedTiles = []
 let section = document.querySelector('section')
@@ -25,10 +25,10 @@ function pattern(e){
     e.target.classList.add('selected')
     clickedTiles.push(e.target)
 
-    let numberofTiles = document.querySelectorAll('.tile').length
+    let numberofTiles = document.querySelectorAll('.tile')
     
 
-    if(clickedTiles.length >= numberofTiles){
+    if(clickedTiles.length >= numberofTiles.length){
         const interval = setInterval(() =>{
             const tile = clickedTiles.shift()
             tile.classList.remove('selected')
